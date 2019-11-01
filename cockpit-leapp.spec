@@ -29,4 +29,8 @@ cp -r public/* %{buildroot}/%{_datadir}/cockpit/leapp
 %license LICENSE.txt
 %{_datadir}/cockpit/leapp
 
+%post
+%{_localstatedir}/log/leapp/remediations
+
+
 %changelog
